@@ -352,3 +352,19 @@ function sumOfEvenNum(N){
 
 
 console.log(sumOfEvenNum(120));
+// Challenge: Find the largest number in an array using a for loop.
+const array123121=[123,12412,12312,314212,4123111111111123,12312,31241,23124,1231,111]
+
+function findLargestNUmbers(arr){
+  let largestNumber=[]
+
+  for(let i=0;i<arr.length;i++){
+    largestNumber.push(arr[i])
+  }
+
+  return largestNumber.sort((a,b)=>{
+    return a-b
+  })[largestNumber.length-1] 
+}
+
+console.log(findLargestNUmbers(array123121));
