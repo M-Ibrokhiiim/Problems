@@ -305,4 +305,31 @@ console.log(multification(3));
 
 // Try printing the multiplication table in reverse order (from 10 to 1). 🚀 Let me know when you're done!
 
+function multificationTable(timeNum){
+    let table=''
 
+    for(let num=10;num>=1;num--){
+      table+=`${timeNum}x ${num}=${timeNum*num}\n`
+    }
+
+    return table
+}
+
+console.log(multificationTable(9));
+
+
+// Write a function that counts how many even numbers exist between 1 and N using a for loop.
+
+function findEvenNums(N){
+  let counter=0
+
+  for(let i=1;i<=N;i++){
+    if(i%2===0){
+        counter++
+    }
+  }
+   
+  return counter
+}
+
+console.log(findEvenNums(121));
