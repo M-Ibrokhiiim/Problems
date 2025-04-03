@@ -267,4 +267,42 @@ for(let i=10;i>1;i--){
     console.log(i);
 }
 
-for(let i=1;i<20;i++)
+// Sum calculation of odd numbers
+let nummmer=0
+for(let i=1;i<20;i++){
+    if(i%2===0){
+        nummmer+=i
+    }
+}
+
+console.log(nummmer);
+
+// Write a function that finds the sum of numbers from 1 to N.
+
+function findsTheSum(n){
+    let sum=0
+    for(let i=1; i<=n;i++){
+       sum+=i
+    }
+
+    return sum
+}
+
+console.log(findsTheSum(123412));
+
+// multiplication table of 7 using a for loop.
+
+function multification(numTimes){
+    let table=''
+    for(let i=1;i<=10;i++){
+        table+=`${numTimes} x ${i}=${numTimes*i}\n`
+    }
+
+    return table
+}
+
+console.log(multification(3));
+
+// Try printing the multiplication table in reverse order (from 10 to 1). 🚀 Let me know when you're done!
+
+
