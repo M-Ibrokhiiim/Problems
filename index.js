@@ -333,3 +333,22 @@ function findEvenNums(N){
 }
 
 console.log(findEvenNums(121));
+
+// Try writing a function to find the sum of all even numbers between 1 and N. Let me know when you're done! 💯
+function sumOfEvenNum(N){
+    let evenNumbers=[]
+    let sum=0
+    for(let i=1; i<=N; i++){
+        if(i%2==0){
+            sum+=i
+            evenNumbers.push(i)
+        }
+    }
+
+    let result=`There are even numbers:[${evenNumbers}]\n Sum of even numbers:${sum}`
+
+    return result
+}
+
+
+console.log(sumOfEvenNum(120));
