@@ -460,3 +460,65 @@ for (const fruit of fruits){
     
 }
 
+// Task: Write a for loop that prints all even numbers from 1 to 20 (inclusive).
+
+const evenNumbers=[]
+for (let i=0; i<=20;i++){
+    if(i%2===0){
+        evenNumbers.push(i)
+    }
+}
+
+console.log(evenNumbers);
+
+// Task: Write a while loop that counts down from 10 to 1 and prints each number.
+
+let tenToOne=10
+
+while(tenToOne>1){
+    tenToOne--
+    console.log(tenToOne);
+}
+
+// Task: Write a do...while loop that asks the user to enter a number (simulating user input) and keeps asking until the number is greater than or equal to 10. You can simulate the user input by setting a variable for this task.
+
+
+let userInput=11
+let errorMessage='Please enter number greater than 10 '
+do{ 
+    if(userInput>=10){
+        console.log('Done');
+        break
+    }
+    
+    userInput+=10
+    console.log(errorMessage);
+    
+}while(userInput<=10)
+
+    
+// Task: Write a for...in loop to iterate through an object of arrays and print the length of each array.
+
+let collections = {
+    fruits: ["apple", "banana", "cherry"],
+    vegetables: ["carrot", "spinach", "broccoli"],
+    grains: ["rice", "wheat"]
+  };
+for (const key in collections){
+    let a=`${key} length equal to ${collections[key].length}`
+    console.log(a);
+}  
+
+
+// Write a for...of loop that filters out the even numbers from an array of numbers (from 1 to 10), and prints only the odd numbers.
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let oddNumbers=[]
+for(const number of numbers){
+    if(number%2===0){
+      oddNumbers.push(number)
+    }
+}
+
+console.log(oddNumbers);
+
+
