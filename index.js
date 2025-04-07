@@ -475,7 +475,7 @@ console.log(evenNumbers);
 
 let tenToOne=10
 
-while(tenToOne>1){
+while(tenToOne>=1){
     tenToOne--
     console.log(tenToOne);
 }
@@ -514,7 +514,7 @@ for (const key in collections){
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let oddNumbers=[]
 for(const number of numbers){
-    if(number%2===0){
+    if(number%2!==0){
       oddNumbers.push(number)
     }
 }
