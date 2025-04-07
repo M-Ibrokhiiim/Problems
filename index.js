@@ -385,12 +385,12 @@ const products = [
     const electronics=[]
     const personalCare=[]
     const groceries=[]
-    
+
     const products={}
 
 
     for(let i=0; i<arr.length;i++){
-        if(arr[i].category==="Electronics"){
+         if(arr[i].category==="Electronics"){
             electronics.push(arr[i].name)
         }else if(arr[i].category==="Personal Care"){
             personalCare.push(arr[i].name)
@@ -410,5 +410,53 @@ const products = [
 
   }
 
-
 console.log(getCategoryProducts(products));
+
+// Task: Write a for loop that prints numbers from 1 to 10 (inclusive) to the console.
+
+
+for(let i=1;i<=10;i++){
+    console.log(i);
+    
+}
+
+// Task: Write a while loop that prints numbers from 1 to 5 (inclusive) to the console.
+
+let i=0;
+
+while(i<5){
+    i+=1
+    console.log(i);
+}
+
+// Task: Write a do...while loop that prints numbers from 1 to 4 (inclusive) to the console.
+
+let i3=0
+
+do{
+    i3+=1
+    console.log(i3);
+}while(i3<5)
+
+
+// Task: Write a for...in loop to iterate through an object and print its keys and corresponding values.
+
+let person = {
+    name: "John",
+    age: 25,
+    city: "New York"
+  };
+
+
+for(const key in person){
+    console.log(key,person[key]);
+    
+}
+// Task: Write a for...of loop to iterate through an array and print its elements.
+
+let fruits = ["apple", "banana", "cherry"];
+for (const fruit of fruits){
+    console.log(fruit);
+    
+}
+
