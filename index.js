@@ -368,3 +368,47 @@ function findLargestNUmbers(arr){
 }
 
 console.log(findLargestNUmbers(array123121));
+
+
+// Write a function groupByCategory(products) that returns an object where each key is a category, and the value is an array of product names in that category.
+
+const products = [
+    { name: 'Laptop', category: 'Electronics' },
+    { name: 'Shampoo', category: 'Personal Care' },
+    { name: 'TV', category: 'Electronics' },
+    { name: 'Toothpaste', category: 'Personal Care' },
+    { name: 'Banana', category: 'Groceries' }
+  ];
+
+
+  function getCategoryProducts(arr){
+    const electronics=[]
+    const personalCare=[]
+    const groceries=[]
+    
+    const products={}
+
+
+    for(let i=0; i<arr.length;i++){
+        if(arr[i].category==="Electronics"){
+            electronics.push(arr[i].name)
+        }else if(arr[i].category==="Personal Care"){
+            personalCare.push(arr[i].name)
+        }else if(arr[i].category==="Groceries"){
+            groceries.push(arr[i].name)
+        }
+    }
+
+
+    products.Electronics=electronics
+    products.PersonalCare=personalCare
+    products.Groceries=groceries
+
+    
+    
+    return products
+
+  }
+
+
+console.log(getCategoryProducts(products));
