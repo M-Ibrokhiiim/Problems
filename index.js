@@ -522,3 +522,21 @@ for(const number of numbers){
 console.log(oddNumbers);
 
 
+
+
+let i121=0
+
+while(i121<6){
+    console.log(i121);
+    i121++
+}
+
+
+
+let con=0
+do{
+    console.log('Do block is working...');
+    con++
+}while(con<0)
+
+
