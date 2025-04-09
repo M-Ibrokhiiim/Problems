@@ -540,3 +540,17 @@ do{
 }while(con<0)
 
 
+
+
+function findFrequentReturnedNums(array){
+    let k={}
+     
+    for(const element of array){
+        k[element]=(k[element]||0)+1
+    }   
+    console.log(k);
+    
+}
+
+
+findFrequentReturnedNums([1,1,1,2,2,2,2,2,3,3,4,4])
