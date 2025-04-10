@@ -1,5 +1,5 @@
 // Sum of two number
-"use strict"
+// "use strict"
 function sumOfNumbers(a,b){
     return a+b
 }
@@ -557,10 +557,62 @@ findFrequentReturnedNums([1,1,1,2,2,2,2,2,3,3,4,4])
 
 
 
+// let globalObj={name:"Ibrokhim"}
 
+
+console.log(this.name);
+
+
+
+function showThisObj(){
+    return this.Location
+}
  
 
+console.log(showThisObj());
 
-x121211212=1212
 
-console.log(x12121121);
+const Abtn=document.getElementById("btn-1")
+
+Abtn.addEventListener('click',()=>{
+    // return this.textContent="Clicked"
+    Abtn.textContent="121"
+    setTimeout(()=>{
+        this.textContent="B"
+    },1000)
+
+    
+})
+
+const Person={
+    name:'Ibrokhim',
+    age:20,
+    born:2004,
+    info:function takeData(car){
+        console.log(`${this.name} born in ${this.born} and he is at ${this.age} age .He drives ${car}`);
+    }
+}
+
+
+const deal=Person.info
+console.log(deal("Range-Rover ans sometimes Lexus!!!"));
+
+
+console.log(this);
+
+
+
+const PPerson={
+    name:"MrShakhrom"
+}
+
+
+
+function returnName(){
+    return console.log(this.name);
+}
+
+
+console.log(PPerson.fullname.call(returnName));
+
+
