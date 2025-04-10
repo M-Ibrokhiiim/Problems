@@ -1,5 +1,5 @@
 // Sum of two number
-"use strict"
+"use strict"1
 function sumOfNumbers(a,b){
     return a+b
 }
