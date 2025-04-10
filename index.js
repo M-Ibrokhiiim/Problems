@@ -1,5 +1,5 @@
 // Sum of two number
-
+"use strict"
 function sumOfNumbers(a,b){
     return a+b
 }
@@ -554,3 +554,13 @@ function findFrequentReturnedNums(array){
 
 
 findFrequentReturnedNums([1,1,1,2,2,2,2,2,3,3,4,4])
+
+
+
+
+ 
+
+
+x121211212=1212
+
+console.log(x12121121);
