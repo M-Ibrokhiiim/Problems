@@ -574,6 +574,8 @@ console.log(showThisObj());
 
 const Abtn=document.getElementById("btn-1")
 
+Abtn.classList.toggle
+  
 Abtn.addEventListener('click',()=>{
     // return this.textContent="Clicked"
     Abtn.textContent="121"
@@ -592,27 +594,89 @@ const Person={
         console.log(`${this.name} born in ${this.born} and he is at ${this.age} age .He drives ${car}`);
     }
 }
-
-
-const deal=Person.info
-console.log(deal("Range-Rover ans sometimes Lexus!!!"));
-
-
-console.log(this);
+ 
 
 
 
-const PPerson={
-    name:"MrShakhrom"
+
+function findNonRepeatedFirstSymbol(string){
+let arrayFromString=Array.from(string).sort()
+let secondArray=arrayFromString
+
+let firstNonRepeatedNumber
+for(let i=0; i<arrayFromString.length;i++){
+    
+}
+
+return firstNonRepeatedNumber
+}
+console.log(findNonRepeatedFirstSymbol('aabbccddeefgg'));
+
+let count=0
+function intervalExecution(){
+    console.log(count++);
+    // console.log(1);
+    
 }
 
 
+ let executionOfInterval=setInterval(intervalExecution,1000)
 
-function returnName(){
-    return console.log(this.name);
+
+setTimeout(()=>{
+    clearInterval(executionOfInterval)
+},4000)
+
+const AaAarray=[1,1,2,2,2,3,3,3,4,4,4,4,4,1]
+const collector=[]
+let repeatedCount=[]
+let coun111t={}
+for(let i=0; i<AaAarray.length;i++){
+    coun111t[AaAarray[i]]=(coun111t[AaAarray[i]] ||  0)+1
+}
+console.log(coun111t)
+
+
+function checkBothSideOfNumber(n){
+    let number=String(n)
+    let number2=number.split('').reverse().join('')
+    return number===number2
+    
+}
+
+console.log(checkBothSideOfNumber(12));
+
+
+// 
+
+
+let result=0
+let  quiz=0
+
+function calculateAllResult(){
+    return result++
+}
+
+console.log(result);
+
+console.log(calculateAllResult());
+
+
+// Find two number from an array that equal to targeted num when added
+
+const numberes=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]   
+
+
+function findNums(target){    
+    for(let i=0; i<numberes.length; i++){
+        for(let j=i+1;j<numberes.length;j++){
+         if(numberes[i]+numberes[j]===target){
+         return [i,j]
+         } 
+        }
+    }
+    return  []
 }
 
 
-console.log(PPerson.fullname.call(returnName));
-
-
+console.log(findNums(7));
